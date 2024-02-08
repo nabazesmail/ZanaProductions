@@ -1,0 +1,168 @@
+/* Hero Section */
+.hero-section {
+  background-image: url("../images/camera8.jpg");
+  background-size: cover; /* Cover the entire section */
+  background-position: center; /* Center the image in the section */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  text-align: center;
+  padding: 50px 20px; /* Adjust padding as needed */
+  height: 80vh;
+}
+
+/* Photo container */
+.photo-container {
+  position: relative;
+  display: inline-block;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  position: relative;
+  top: 18%;
+  right: 20%;
+  width: 30%;
+}
+
+.second-par {
+  color: #ff8c00bd;
+  color: #fff;
+  font-family: fantasy;
+  padding: 10px;
+  max-width: 800px;
+  margin: 10px auto;
+  line-height: 1.5;
+  font-size: 6rem;
+}
+
+.photo-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.img {
+  position: relative;
+  width: 40%;
+}
+
+/* Welcome text styling */
+.outside-hero-section {
+  margin-top: 20px; /* Space above the welcome text */
+  text-align: center;
+}
+
+.title {
+  font-size: 1.5em;
+  font-family: cursive;
+  max-width: 800px; /* Set a max-width for the text block */
+  margin: 10px auto; /* Center the text block with automatic margin */
+}
+
+.welcome-text {
+  font-family: cursive;
+  padding: 10px;
+  max-width: 800px; /* Set a max-width for the text block */
+  margin: 10px auto; /* Center the text block with automatic margin */
+  line-height: 1.5; /* Increase line height for better readability */
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+  }
+
+.photo-gallery {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-photo {
+  max-width: 60%;
+  width: 90%;
+  display: block;
+}
+
+.slide-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 2;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.slide-button {
+  /* ... existing styles ... */
+  background-color: transparent; /* Make background transparent */
+  border: none; /* Remove border */
+}
+
+.slide-button img {
+  height: 30px; /* Adjust the size as needed */
+  width: auto; /* Maintain aspect ratio */
+}
+
+.slide-button.left {
+  left: 20px;
+}
+
+.slide-button.right {
+  right: 20px;
+}
+
+.slide-button img:hover {
+    animation: shake 0.5s ease-in-out;
+    animation-iteration-count: 1;
+  }
+
+.new-section {
+  text-align: center;
+  margin-top: 1%;
+  font-family: cursive;
+}
+
+.experince-par {
+  font-family: cursive;
+  padding: 10px;
+  max-width: 800px;
+  margin: 10px auto;
+  line-height: 1.5;
+  font-size: 20px;
+}
+
+.your-photo {
+  max-width: 100%; /* Ensure the image is responsive */
+  height: auto;
+  margin: 20px 0; /* Space between the image and the text */
+}
+
+.site-footer {
+  border-top: 2px solid rgba(0, 0, 0, 0.514);
+  padding: 15px;
+  font-family: cursive;
+  text-align: center;
+  width: 50%; /* Set width to 70% of the parent element */
+  margin: 2% auto; /* Center the footer */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .gallery-photo {
+    flex: 1 1 100%; /* One image per row */
+    max-width: 100%; /* Adjust this to control the size on small screens */
+  }
+}
