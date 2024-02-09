@@ -1,0 +1,36 @@
+
+.design-title{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center;
+}
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(350px, 1fr)
+  ); /* Creates a responsive grid */
+  gap: 15px; /* Space between items */
+  padding: 20px; /* Padding around the entire gallery */
+}
+
+.gallery-item {
+  overflow: hidden; /* Ensures images don't overflow their container */
+  border-radius: 8px; /* Optional: Adds rounded corners to the images */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
+  transition: transform 0.3s ease-in-out; /* Optional: Adds a zoom effect on hover */
+}
+
+.gallery-image {
+  width: 100%; /* Makes images fill their containers */
+  height: auto; /* Keeps the aspect ratio of the images */
+  display: block; /* Removes bottom margin/space */
+  object-fit: cover; /* Ensures images cover the container without stretching */
+  transition: transform 0.3s ease-in-out; /* Smooth transition for zoom effect */
+}
+
+.gallery-item:hover .gallery-image {
+  transform: scale(1.05); /* Zoom effect on hover */
+}

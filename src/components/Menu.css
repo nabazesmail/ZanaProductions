@@ -68,66 +68,24 @@
 }
 
 @keyframes shake {
-    0% { transform: translateX(0); }
-    25% { transform: translateX(-5px); }
-    50% { transform: translateX(5px); }
-    75% { transform: translateX(-5px); }
-    100% { transform: translateX(0); }
+  0% {
+    transform: translateX(0);
   }
-
-.photo-gallery {
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.gallery-photo {
-  max-width: 60%;
-  width: 90%;
-  display: block;
-}
-
-.slide-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  border: none;
-  padding: 10px 20px;
-  font-size: 20px;
-  cursor: pointer;
-  z-index: 2;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-}
-
-.slide-button {
-  /* ... existing styles ... */
-  background-color: transparent; /* Make background transparent */
-  border: none; /* Remove border */
-}
-
-.slide-button img {
-  height: 30px; /* Adjust the size as needed */
-  width: auto; /* Maintain aspect ratio */
-}
-
-.slide-button.left {
-  left: 20px;
-}
-
-.slide-button.right {
-  right: 20px;
-}
-
-.slide-button img:hover {
-    animation: shake 0.5s ease-in-out;
-    animation-iteration-count: 1;
+  25% {
+    transform: translateX(-5px);
   }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
 
 .new-section {
   text-align: center;
@@ -159,10 +117,24 @@
   margin: 2% auto; /* Center the footer */
 }
 
-/* Media query for smaller screens */
-@media (max-width: 768px) {
-  .gallery-photo {
-    flex: 1 1 100%; /* One image per row */
-    max-width: 100%; /* Adjust this to control the size on small screens */
-  }
+.buttons-container {
+  text-align: center;
+  margin-top: 20px;
 }
+
+.navigation-button {
+  background-color: #ff8c00; /* Example color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: cursive;
+  transition: transform 0.2s ease; /* Add transition for transform */
+}
+
+.navigation-button:active {
+  transform: scale(0.95); /* Scale down button when clicked */
+}
+

@@ -1,25 +1,21 @@
 import "./Menu.css";
-import React, { useState } from "react";
 
-// Import images from the src folder
-import camera from "../images/camera.jpg";
-import camera2 from "../images/camera2.jpg";
-import camera3 from "../images/camera5.jpg";
 import yourPhoto from "../images/camera6.jpg";
-import swipeRight from "../images/swipe-right.png";
-import swipeLeft from "../images/swipe-left.png";
+import { useNavigate } from "react-router-dom";
 
 const Menu = () => {
-  const images = [camera, camera2, camera3,yourPhoto]; // Array of images
-  const [current, setCurrent] = useState(0); // Current image index
+  let navigate = useNavigate();
 
-  const nextSlide = () => {
-    setCurrent(current === images.length - 1 ? 0 : current + 1);
+  const goToPhotos = () => {
+    navigate("/photos");
+    console.log("Navigate to Photos");
   };
 
-  const prevSlide = () => {
-    setCurrent(current === 0 ? images.length - 1 : current - 1);
+  const goToDesigns = () => {
+    navigate("/Designs");
+    console.log("Navigate to Designs");
   };
+
   return (
     <>
       <div className="hero-section">
@@ -28,24 +24,19 @@ const Menu = () => {
         </div>
       </div>
       <div className="outside-hero-section">
-        <h1 className="title">My photos</h1>
+        <h1 className="title">My Creative Space</h1>
         <p className="welcome-text">
-          Explore our gallery of captured moments and memories. Join us on a
-          visual journey.
+          Explore our creations across different mediums. Join us on a journey
+          of visual and artistic exploration.
         </p>
-      </div>
-      <div className="photo-gallery">
-        <button onClick={prevSlide} className="slide-button left">
-          <img src={swipeLeft} alt="Previous" />
-        </button>
-        <img
-          src={images[current]}
-          alt={`Slide ${current}`}
-          className="gallery-photo"
-        />
-        <button onClick={nextSlide} className="slide-button right">
-          <img src={swipeRight} alt="Next" />
-        </button>
+        <div className="buttons-container">
+          <button onClick={goToPhotos} className="navigation-button">
+            Photos
+          </button>
+          <button onClick={goToDesigns} className="navigation-button">
+            Designs
+          </button>
+        </div>
       </div>
 
       {/* New Section with a photo and your story */}
@@ -67,7 +58,7 @@ const Menu = () => {
       {/* Footer */}
       <footer className="site-footer">
         <p>
-          &copy; {new Date().getFullYear()} Zana Photography. All rights
+          &copy; {new Date().getFullYear()} ZanaProductions. All rights
           reserved.
         </p>
       </footer>
