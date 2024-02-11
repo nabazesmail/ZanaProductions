@@ -1,36 +1,61 @@
-
 .design-title{
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 10px;
-    color: #333;
-    text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: black;
+  text-align: center;
 }
+
+
+.title-h1 {
+  font-size: 2.7rem; /* Matched with .title-h1 from Photos component */
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: black; /* Assuming you want the same color as Photos component */
+  text-align: center;
+  font-family: cursive; /* Assuming you want to keep this font style */
+}
+
+.paragraph{
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande";
+  font-weight: 500;
+  padding: 20px;
+  max-width: 80%;
+  margin: 2% auto;
+  line-height: 1.5;
+  font-size: 24px;
+}
+
 .gallery-container {
   display: grid;
-  grid-template-columns: repeat(
-    auto-fill,
-    minmax(350px, 1fr)
-  ); /* Creates a responsive grid */
-  gap: 15px; /* Space between items */
-  padding: 20px; /* Padding around the entire gallery */
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Same as Photos component */
+  gap: 15px;
+  padding: 20px;
 }
 
 .gallery-item {
-  overflow: hidden; /* Ensures images don't overflow their container */
-  border-radius: 8px; /* Optional: Adds rounded corners to the images */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
-  transition: transform 0.3s ease-in-out; /* Optional: Adds a zoom effect on hover */
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  padding-top: 100%; /* This will make the item square */
+  transition: transform 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out;
+  -moz-transition: transform 0.3s ease-in-out;
+  -ms-transition: transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
 }
 
 .gallery-image {
-  width: 100%; /* Makes images fill their containers */
-  height: auto; /* Keeps the aspect ratio of the images */
-  display: block; /* Removes bottom margin/space */
-  object-fit: cover; /* Ensures images cover the container without stretching */
-  transition: transform 0.3s ease-in-out; /* Smooth transition for zoom effect */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
 }
 
 .gallery-item:hover .gallery-image {
-  transform: scale(1.05); /* Zoom effect on hover */
+  transform: scale(1.05); /* Same zoom effect as Photos component */
 }

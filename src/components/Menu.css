@@ -48,44 +48,58 @@
 
 /* Welcome text styling */
 .outside-hero-section {
-  margin-top: 20px; /* Space above the welcome text */
+  margin: 4% auto; /* Space above the welcome text */
   text-align: center;
 }
 
 .title {
-  font-size: 1.5em;
+  font-size: 1.7em;
   font-family: cursive;
   max-width: 800px; /* Set a max-width for the text block */
-  margin: 10px auto; /* Center the text block with automatic margin */
+  margin: 2% auto; /* Center the text block with automatic margin */
+  margin-top: 5%;
+}
+
+.title2 {
+  font-size: 1.7em;
+  font-family: cursive;
+  max-width: 800px; /* Set a max-width for the text block */
+  margin: 2% auto; /* Center the text block with automatic margin */
+  margin-top: 5%;
 }
 
 .welcome-text {
-  font-family: cursive;
-  padding: 10px;
-  max-width: 800px; /* Set a max-width for the text block */
-  margin: 10px auto; /* Center the text block with automatic margin */
-  line-height: 1.5; /* Increase line height for better readability */
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding: 20px;
+  max-width: 80%; /* Set a max-width for the text block */
+  margin: 2% auto; /* Center the text block with automatic margin */
+  line-height: 1.5;
+  font-size: 20px;
 }
 
-@keyframes shake {
-  0% {
-    transform: translateX(0);
-  }
-  25% {
-    transform: translateX(-5px);
-  }
-  50% {
-    transform: translateX(5px);
-  }
-  75% {
-    transform: translateX(-5px);
-  }
-  100% {
-    transform: translateX(0);
-  }
+.call-to-action {
+  color: black; /* Adjust text color as needed */
+  margin-top: 20px; /* Space from the previous paragraph */
+  font-weight: normal;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  max-width: 80%;
+  margin: 2% auto; /* Center the text block with automatic margin */
+  margin-top: 4%;
+  padding: auto 3%;
+  line-height: 1.6; /* Increase line height for better readability */
+  text-align: center; /* Ensure text is centered */
+  font-size: 17px;
+  font-weight: 550;
 }
 
-
+.section-divider {
+  width: 60%; /* Line width */
+  height: 2px; /* Line thickness */
+  background-color: #d3d3d3; /* Line color, choose what fits your design */
+  margin: 20px auto; /* Center the line horizontally and add some space around it */
+}
 
 .new-section {
   text-align: center;
@@ -94,10 +108,11 @@
 }
 
 .experince-par {
-  font-family: cursive;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   padding: 10px;
-  max-width: 800px;
-  margin: 10px auto;
+  max-width: 80%;
+  margin: 5%auto;
   line-height: 1.5;
   font-size: 20px;
 }
@@ -109,32 +124,96 @@
 }
 
 .site-footer {
-  border-top: 2px solid rgba(0, 0, 0, 0.514);
   padding: 15px;
-  font-family: cursive;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   text-align: center;
-  width: 50%; /* Set width to 70% of the parent element */
+  width: 60%; /* Set width to 70% of the parent element */
   margin: 2% auto; /* Center the footer */
+}
+
+.nextIcons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.nextIcons:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+  color: #fff;
 }
 
 .buttons-container {
   text-align: center;
   margin-top: 20px;
 }
-
 .navigation-button {
-  background-color: #ff8c00; /* Example color */
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  margin: 0 10px;
+  background-color: transparent; /* Transparent background */ /* Initial text color */
+  border: 2px solid; /* Solid border */
+  padding: 15px 30px; /* Padding for larger buttons */
+  margin: 2% 1%;
   cursor: pointer;
   border-radius: 5px;
-  font-family: cursive;
-  transition: transform 0.2s ease; /* Add transition for transform */
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 1.5rem; /* Font size */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transition for background and text color */
+  display: inline-flex; /* Use flex to align text and icon */
+  align-items: center; /* Vertical alignment */
+  justify-content: center; /* Horizontal alignment */
+  position: relative; /* For positioning the icon */
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; /* Updated to include box-shadow */
 }
 
-.navigation-button:active {
-  transform: scale(0.95); /* Scale down button when clicked */
+.navigation-button.orange-border:hover,
+.navigation-button.orange-border:focus {
+  border-color: #ff8c00;
+  background-color: #ff8c00;
+  color: #fff;
 }
 
+.navigation-button.blue-border:hover,
+.navigation-button.blue-border:focus {
+  border-color: #00879d;
+  background-color: #00879d;
+  color: #fff;
+}
+/* Icon styling */
+.navigation-button .nextIcons {
+  margin-left: 10px; /* Space between text and icon */
+  width: 20px; /* Icon size */
+  height: auto; /* Maintain aspect ratio */
+  color: #000; /* Default color */
+  transition: transform 0.3s ease; /* Smooth transition for icon transform */
+}
+
+
+
+.navigation-button:hover .nextIcons {
+  color: #fff; /* Color change on hover */
+}
+
+
+/* Hover state for the icon inside the button */
+.navigation-button:hover .nextIcons,
+.navigation-button:focus .nextIcons {
+  transform: translateX(5px); /* Move icon to the right */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .navigation-button {
+    padding: 10px 20px; /* Smaller padding for smaller buttons */
+    font-size: 1.3rem; /* Smaller font size for mobile */
+    margin: 10px 5px; /* Adjust margin for tighter spacing */
+  }
+
+  /* Adjust the next icon size if necessary */
+  .navigation-button .nextIcons {
+    margin-left: 5px; /* Adjusted space between text and icon */
+    width: 15px; /* Smaller icon size */
+    /* height is auto, so it will scale proportionally */
+  }
+}
