@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./photos.css"; // Ensure this CSS file exists and is correctly linked
 
 // Import images
@@ -14,8 +15,12 @@ import photos9 from "../images/zhn6.JPG";
 import photos10 from "../images/daik.JPG";
 import photos11 from "../images/daik2.JPG";
 
+
+import PhotoArrowSVG from './PhotoArrowSVG';
+
+
 const Photos = () => {
-  const images = [photos10,photos11,photos1, photos2, photos3, photos4,photos5,photos6,photos7,photos8,photos9]; // Array of images
+  const images = [photos1, photos2, photos3,photos10,photos11,photos4,photos5,photos6,photos7,photos8,photos9]; // Array of images
   const [opacity, setOpacity] = useState(0); // Initial opacity is 0 for fade-in effect
 
   useEffect(() => {
@@ -27,6 +32,9 @@ const Photos = () => {
   return (
     <div className="photo-title" style={{ opacity: opacity, transition: 'opacity 1s ease' }}>
       <h1 className="title-h1">Photos</h1>
+      <Link to="/"> {/* Wrap the SVG in a Link component */}
+        <PhotoArrowSVG />
+      </Link>
       <p className="paragraph">Check out some of my photos!</p>
       <div className="gallery-container">
         {images.map((image, index) => (

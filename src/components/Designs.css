@@ -16,6 +16,29 @@
   font-family: cursive; /* Assuming you want to keep this font style */
 }
 
+
+.photo-arrow-svg {
+  float: left; /* Positions the SVG to the left */
+  margin-left: 5%; /* Adds some space between the SVG and the following content */
+  margin-top: 2%;
+}
+
+/* Targeting the link wrapping the SVG for a pointer cursor */
+a .photo-arrow-svg {
+  transition: transform 0.2s ease, stroke 0.2s ease;
+  cursor: pointer;
+  -webkit-transition: transform 0.2s ease, stroke 0.2s ease;
+  -moz-transition: transform 0.2s ease, stroke 0.2s ease;
+  -ms-transition: transform 0.2s ease, stroke 0.2s ease;
+  -o-transition: transform 0.2s ease, stroke 0.2s ease;
+}
+
+/* Hover effect */
+a:hover .photo-arrow-svg {
+  transform: scale(1.1); /* Slightly enlarges the SVG */
+  stroke: black; /* Change color on hover, choose a color that matches your design */
+}
+
 .paragraph{
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande";
   font-weight: 500;

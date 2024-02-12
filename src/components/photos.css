@@ -1,13 +1,15 @@
-.title-h1{
+.title-h1 {
   font-size: 2.7rem;
   font-weight: 600;
   margin-bottom: 10px;
   color: black;
   text-align: center;
   font-family: cursive;
+  display: inline-block;
+  padding-right: 8%;
 }
 
-.paragraph{
+.paragraph {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande";
   font-weight: 500;
   padding: 20px;
@@ -17,7 +19,27 @@
   font-size: 24px;
 }
 
+.photo-arrow-svg {
+  float: left; /* Positions the SVG to the left */
+  margin-left: 5%; /* Adds some space between the SVG and the following content */
+  margin-top: 2%;
+}
 
+/* Targeting the link wrapping the SVG for a pointer cursor */
+a .photo-arrow-svg {
+  transition: transform 0.2s ease, stroke 0.2s ease;
+  cursor: pointer;
+  -webkit-transition: transform 0.2s ease, stroke 0.2s ease;
+  -moz-transition: transform 0.2s ease, stroke 0.2s ease;
+  -ms-transition: transform 0.2s ease, stroke 0.2s ease;
+  -o-transition: transform 0.2s ease, stroke 0.2s ease;
+}
+
+/* Hover effect */
+a:hover .photo-arrow-svg {
+  transform: scale(1.1); /* Slightly enlarges the SVG */
+  stroke: black; /* Change color on hover, choose a color that matches your design */
+}
 
 .photo-title {
   font-size: 1.5rem;
@@ -29,7 +51,10 @@
 
 .gallery-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Increase the minimum size of the columns */
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(400px, 1fr)
+  ); /* Increase the minimum size of the columns */
   gap: 15px;
   padding: 20px;
 }
@@ -59,4 +84,11 @@
 
 .gallery-item:hover .gallery-image {
   transform: scale(1.05); /* More moderate zoom effect */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .photo-arrow-svg {
+    margin-top: 8%; /* Add bottom margin on mobile */
+  }
 }

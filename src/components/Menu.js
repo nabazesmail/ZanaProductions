@@ -1,6 +1,7 @@
 import "./Menu.css";
 
 import yourPhoto from "../images/gull.jpg";
+import yourPhoto2 from "../images/design2.jpg";
 import { useNavigate } from "react-router-dom";
 
 const Menu = () => {
@@ -50,7 +51,8 @@ const Menu = () => {
               width="20px"
               viewBox="0 0 477.175 477.175"
               xmlns="http://www.w3.org/2000/svg"
-              stroke="currentColor" stroke-width="35"
+              stroke="currentColor"
+              stroke-width="35"
             >
               <path d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5 c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z" />
             </svg>
@@ -68,7 +70,8 @@ const Menu = () => {
               width="20px"
               viewBox="0 0 477.175 477.175"
               xmlns="http://www.w3.org/2000/svg"
-              stroke="currentColor" stroke-width="35"
+              stroke="currentColor"
+              stroke-width="35"
             >
               <path d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5 c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z" />
             </svg>
@@ -97,6 +100,28 @@ const Menu = () => {
 
       {/* Divider Line */}
       <div className="section-divider"></div>
+
+      {/* New Section with a photo and your story */}
+      <div className="new-section">
+        <h2 className="title2">My Design Journey</h2>
+        <img
+          src={yourPhoto2}
+          alt="Your Design Experience"
+          className="your-photo"
+        />
+        <p className="experince-par">
+          Embarking on my design journey over four years ago, I've aimed to
+          merge aesthetics with functionality, creating visual experiences that
+          are both resonant and effective. Focusing on the careful choice of
+          typography, color schemes, and thoughtful UI layouts, each project has
+          been a chance to delve into visual storytelling's vast potential. My
+          path has encompassed graphic design, web design, and UX design,
+          fostering a comprehensive approach to crafting compelling,
+          user-focused designs. This journey underscores design's transformative
+          power, driving my passion for innovation and expanding visual
+          possibilities.
+        </p>
+      </div>
 
       {/* Footer */}
       <footer className="site-footer">
