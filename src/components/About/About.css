@@ -88,4 +88,12 @@
     position: static; /* To ensure the button flows with the document */
     margin-bottom: 20px; /* Add space below the button on small screens */
   }
+
+  .about-photo {
+    border-radius: 2%;
+    -webkit-border-radius: 2%;
+    -moz-border-radius: 2%;
+    -ms-border-radius: 2%;
+    -o-border-radius: 2%;
+  }
 }
