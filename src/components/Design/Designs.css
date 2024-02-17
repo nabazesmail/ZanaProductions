@@ -1,32 +1,30 @@
-.title-h1 {
-  font-size: 2.7rem;
+.design-title{
+  font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 10px;
   color: black;
   text-align: center;
-  font-family: cursive;
-  display: inline-block;
-  padding-right: 8%;
 }
 
-.paragraph {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande";
-  font-weight: 500;
-  padding: 20px;
-  max-width: 80%;
-  margin: 2% auto;
-  line-height: 1.5;
-  font-size: 24px;
+
+.title-h1 {
+  font-size: 2.7rem; /* Matched with .title-h1 from Photos component */
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: black; /* Assuming you want the same color as Photos component */
+  text-align: center;
+  font-family: cursive; /* Assuming you want to keep this font style */
 }
 
-.photo-arrow-svg {
+
+.back-icon {
   float: left; /* Positions the SVG to the left */
   margin-left: 5%; /* Adds some space between the SVG and the following content */
   margin-top: 2%;
 }
 
 /* Targeting the link wrapping the SVG for a pointer cursor */
-a .photo-arrow-svg {
+a .back-icon {
   transition: transform 0.2s ease, stroke 0.2s ease;
   cursor: pointer;
   -webkit-transition: transform 0.2s ease, stroke 0.2s ease;
@@ -36,25 +34,24 @@ a .photo-arrow-svg {
 }
 
 /* Hover effect */
-a:hover .photo-arrow-svg {
+a:hover .back-icon {
   transform: scale(1.1); /* Slightly enlarges the SVG */
   stroke: black; /* Change color on hover, choose a color that matches your design */
 }
 
-.photo-title {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 10px;
-  color: black;
-  text-align: center;
+.paragraph{
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande";
+  font-weight: 500;
+  padding: 20px;
+  max-width: 80%;
+  margin: 2% auto;
+  line-height: 1.5;
+  font-size: 24px;
 }
 
 .gallery-container {
   display: grid;
-  grid-template-columns: repeat(
-    auto-fill,
-    minmax(400px, 1fr)
-  ); /* Increase the minimum size of the columns */
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Same as Photos component */
   gap: 15px;
   padding: 20px;
 }
@@ -83,12 +80,14 @@ a:hover .photo-arrow-svg {
 }
 
 .gallery-item:hover .gallery-image {
-  transform: scale(1.05); /* More moderate zoom effect */
+  transform: scale(1.05); /* Same zoom effect as Photos component */
 }
+
 
 /* Media query for mobile devices */
 @media (max-width: 768px) {
-  .photo-arrow-svg {
-    margin-top: 8%; /* Add bottom margin on mobile */
+  .back-icon {
+    margin-top: 9%; /* Add bottom margin on mobile */
+    margin-left: 6%;
   }
 }

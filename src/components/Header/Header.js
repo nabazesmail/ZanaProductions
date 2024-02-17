@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
 
-import logo from "../images/LOGOZ.png";
+import logo from "../../images/LOGOZ.png";
 
 const Header = () => {
   const [isNavVisible, setIsNavVisible] = useState(false);

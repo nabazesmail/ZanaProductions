@@ -1,0 +1,15 @@
+/* footer.css */
+
+.site-footer {
+  background-color: #fff; /* Light grey background */
+  color: #333; /* Dark text color */
+  text-align: center;
+}
+
+.footer-bottom {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: black;
+    text-align: center;
+    font-family: cursive;
+}

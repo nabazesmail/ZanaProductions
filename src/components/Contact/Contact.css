@@ -1,0 +1,147 @@
+.contact-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+.text-column {
+  max-width: 50%;
+}
+
+.photo-column {
+  flex: 1; /* Allows the column to take up equal space */
+  display: flex; /* Use flexbox to center the photo */
+  justify-content: center; /* Center the photo horizontally */
+  padding: 10px; /* Spacing around the photo */
+  max-width: 50%;
+}
+
+.contact-photo {
+  max-width: 80%;
+  border-top-right-radius: 100px; /* Adjust the radius as needed */
+  border-bottom-right-radius: 100px; /* Adjust the radius as needed */
+  margin-top: 5%;
+}
+
+.back-button {
+  background-color: transparent; /* Make the background transparent */
+  border: none; /* Remove the border */
+  cursor: pointer; /* Change cursor to pointer to indicate it's clickable */
+  padding: 0; /* Remove padding */
+  position: relative; /* Positioning relative to its nearest positioned ancestor */
+  top: 10%; /* Distance from the top */
+  left: 5%; /* Distance from the left */
+  display: flex; /* To center the icon inside */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  z-index: 10; /* Ensure the button is above other elements */
+}
+
+.back-icon {
+  width: 30px; /* Set the icon size */
+  height: 30px; /* Keep the aspect ratio */
+  transition: transform 0.2s ease; /* Smooth transition for the transform */
+}
+
+.back-button:hover .back-icon {
+  transform: scale(1.2); /* Scale up the icon on hover */
+}
+
+.title-h2 {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 2.5rem;
+  color: black;
+}
+
+.par-me {
+  display: block;
+  margin-top: 3%;
+  font-size: 1.3rem;
+  color: black;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding: 0 10% 0 10%;
+  text-align: center;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.1rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+/* General styling for social media icons */
+.social-icon {
+  transition: transform 0.2s ease; /* Smooth transition for scaling */
+}
+
+/* Hover effect for all social media icons */
+.social-icon:hover {
+  transform: scale(1.1); /* Slightly enlarge icons on hover */
+}
+
+/* Apply the general class to all specific icon classes */
+.fb-icon,
+.insta-icon,
+.linkedin-icon {
+  width: 50px; /* Standardize the width */
+  height: 50px; /* Standardize the height */
+  /* The padding is removed to ensure consistency and centered scaling */
+}
+
+/* Container styling remains the same */
+.social-media-icons {
+  display: flex;
+  justify-content: center; /* Center the icons horizontally */
+  gap: 20px; /* Space between icons */
+  margin-top: 20px; /* Space above the icons */
+}
+
+.fb-icon {
+  width: 70px; /* Adjust the width as needed */
+  height: 70px; /* Adjust the height as needed */
+  padding-top: 10px;
+}
+
+.insta-icon {
+  width: 80px; /* Adjust the width as needed */
+  height: 80px; /* Adjust the height as needed */
+  padding-top: 6px;
+  padding-left: 10px;
+}
+
+.linkedin-icon {
+  width: 90px; /* Adjust the width as needed */
+  height: 90px; /* Adjust the height as needed */
+  padding-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    flex-direction: column;
+    margin: 5% 0 0 0;
+  }
+
+  .contact-photo {
+    border-top-right-radius: 0; /* Adjust the radius as needed */
+    border-bottom-right-radius: 0; /* Adjust the radius as needed */
+    border-bottom-left-radius: 0; /* Adjust the radius as needed */
+    border-top-left-radius: 0; /* Adjust the radius as needed */
+  }
+
+  .text-column,
+  .photo-column {
+    max-width: 100%;
+    margin-bottom: 5%;
+  }
+
+  .back-button {
+    top: 5%;
+    left: 5%;
+  }
+}
