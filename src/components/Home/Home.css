@@ -130,8 +130,7 @@
   margin: 2% 1%;
   cursor: pointer;
   border-radius: 2%;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",    "Lucida Sans", Arial, sans-serif;
   font-size: 1.5rem;
   transition: background-color 0.3s ease, color 0.3s ease;
   display: inline-flex;
@@ -139,11 +138,14 @@
   justify-content: center;
   position: relative;
   transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
-
   -webkit-border-radius: 2%;
   -moz-border-radius: 2%;
   -ms-border-radius: 2%;
   -o-border-radius: 2%;
+  -webkit-transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  -moz-transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  -ms-transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  -o-transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .navigation-button.orange-border {

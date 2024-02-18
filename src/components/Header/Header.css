@@ -125,4 +125,8 @@
   .nav-visible .nav-links li a:hover {
     color: #bd6344;
   }
+
+  .logo-container h1 {
+    font-family:Arial, Helvetica, sans-serif;
+  }
 }
