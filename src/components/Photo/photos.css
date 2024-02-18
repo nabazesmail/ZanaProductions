@@ -49,16 +49,6 @@ a:hover .back-icon {
   text-align: center;
 }
 
-.gallery-container {
-  display: grid;
-  grid-template-columns: repeat(
-    auto-fill,
-    minmax(400px, 1fr)
-  ); /* Increase the minimum size of the columns */
-  gap: 15px;
-  padding: 20px;
-}
-
 .gallery-item {
   overflow: hidden;
   border-radius: 8px;
@@ -84,6 +74,18 @@ a:hover .back-icon {
 
 .gallery-item:hover .gallery-image {
   transform: scale(1.05); /* More moderate zoom effect */
+}
+
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(400px, 1fr)
+  ); /* Increase the minimum size of the columns */
+  gap: 1%;
+  padding: 5%;
+  margin: 2%;
 }
 
 /* Media query for mobile devices */

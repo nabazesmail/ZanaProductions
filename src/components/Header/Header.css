@@ -6,6 +6,7 @@
   align-items: center;
   padding: 15px 25px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .logo-div {
@@ -23,7 +24,6 @@
 .logo-container h1 {
   margin: 0;
   font-size: 28px;
-  font-family: cursive;
 }
 
 .logo-div img {
@@ -51,7 +51,6 @@
   padding: 5px 10px;
   border-radius: 3px;
   font-weight: 600;
-  font-family: cursive;
 }
 
 .nav-links li a:hover,
@@ -82,7 +81,6 @@
   background-color: black;
   border-radius: 10px;
 }
-
 @media (max-width: 768px) {
   .nav-links {
     display: none;
@@ -95,13 +93,13 @@
     right: 0;
     z-index: 10;
     padding-top: 10%;
-    transform: translateX(100%); /* Initially off-screen to the right */
-    transition: transform 0.5s ease; /* Smooth transition for sliding in */
+    transform: translateX(100%);
+    transition: transform 0.5s ease;
   }
 
   .nav-visible .nav-links {
     display: flex;
-    transform: translateX(0); /* Slide in to visible position */
+    transform: translateX(0);
   }
 
   .nav-toggle {
@@ -127,6 +125,23 @@
   }
 
   .logo-container h1 {
-    font-family:Arial, Helvetica, sans-serif;
+    display: none;
+  }
+
+  /* Updated CSS for logo alignment */
+  .logo-div {
+    width: 100%; /* Ensure the div takes full width */
+    text-align: left; /* Align child elements (the img) to the left */
+  }
+
+  .logo-div img {
+    max-width: 100px; /* Optional: Adjust logo size for mobile */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .logo-div {
+    flex-grow: 1; /* Allows the logo to take up the flex space */
+    display:inline;
+    justify-content: center; /* Center logo */
   }
 }

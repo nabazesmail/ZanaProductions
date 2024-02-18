@@ -7,6 +7,7 @@
   text-align: center;
   padding: 50px 20px; /* Adjust padding as needed */
   height: 80vh;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 /* Photo container */
@@ -29,8 +30,8 @@
   margin: 10px auto;
   line-height: 1.5;
   font-size: 8rem;
-  font-family: "Caveat", cursive;
   font-weight: 600;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .photo-container img {
@@ -52,15 +53,12 @@
 
 .title {
   font-size: 1.7em;
-  font-family: cursive;
   max-width: 800px; /* Set a max-width for the text block */
   margin: 2% auto; /* Center the text block with automatic margin */
   margin-top: 5%;
 }
 
 .welcome-text {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
   padding: 20px;
   max-width: 80%; /* Set a max-width for the text block */
   margin: 2% auto; /* Center the text block with automatic margin */
@@ -72,8 +70,6 @@
   color: black; /* Adjust text color as needed */
   margin-top: 20px; /* Space from the previous paragraph */
   font-weight: normal;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
   max-width: 80%;
   margin: 2% auto; /* Center the text block with automatic margin */
   margin-top: 4%;
@@ -94,13 +90,10 @@
 .new-section {
   text-align: center;
   margin-top: 1%;
-  font-family: cursive;
 }
 
 .site-footer {
   padding: 15px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
   text-align: center;
   width: 60%; /* Set width to 70% of the parent element */
   margin: 2% auto; /* Center the footer */
@@ -130,7 +123,6 @@
   margin: 2% 1%;
   cursor: pointer;
   border-radius: 2%;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",    "Lucida Sans", Arial, sans-serif;
   font-size: 1.5rem;
   transition: background-color 0.3s ease, color 0.3s ease;
   display: inline-flex;
@@ -142,16 +134,25 @@
   -moz-border-radius: 2%;
   -ms-border-radius: 2%;
   -o-border-radius: 2%;
-  -webkit-transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
-  -moz-transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
-  -ms-transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
-  -o-transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  -webkit-transition: background-color 0.3s ease, color 0.3s ease,
+    box-shadow 0.3s ease;
+  -moz-transition: background-color 0.3s ease, color 0.3s ease,
+    box-shadow 0.3s ease;
+  -ms-transition: background-color 0.3s ease, color 0.3s ease,
+    box-shadow 0.3s ease;
+  -o-transition: background-color 0.3s ease, color 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .navigation-button.orange-border {
   border-color: #ff8c00;
   background-color: #ff8c00;
   color: #fff;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 
 .navigation-button.orange-border:hover,
@@ -165,6 +166,11 @@
   border-color: #00879d;
   background-color: #00879d;
   color: #fff;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 
 .navigation-button.blue-border:hover,
@@ -175,11 +181,20 @@
 }
 /* Icon styling */
 .navigation-button .nextIcons {
-  margin-left: 10px; /* Space between text and icon */
-  width: 20px; /* Icon size */
-  height: auto; /* Maintain aspect ratio */
-  color: #fff; /* Default color */
-  transition: transform 0.3s ease; /* Smooth transition for icon transform */
+  margin-left: 10px;
+  /*Spacebetweentextandicon*/
+  width: 20px;
+  /*Iconsize*/
+  height: auto;
+  /*Maintainaspectratio*/
+  color: #fff;
+  /*Defaultcolor*/
+  transition: transform 0.3s ease;
+  /* Smooth transition for icon transform */
+  -webkit-transition: transform 0.3s ease;
+  -moz-transition: transform 0.3s ease;
+  -ms-transition: transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
 }
 
 .navigation-button:hover .nextIcons {
@@ -214,15 +229,12 @@
 
 .title2 {
   font-size: 1.7em;
-  font-family: cursive;
   max-width: 800px; /* Set a max-width for the text block */
   margin: 2% auto; /* Center the text block with automatic margin */
   display: inline-block;
 }
 
 .experince-par {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
   padding: 10px;
   max-width: 80%;
   margin: 5%auto;
@@ -235,7 +247,6 @@
 .new-section2 {
   text-align: center;
   margin-top: 1%;
-  font-family: cursive;
 }
 
 .new-section2 .content-wrapper2 {
@@ -253,15 +264,12 @@
 
 .new-section2 .title3 {
   font-size: 1.7em;
-  font-family: cursive;
   max-width: 800px; /* Set a max-width for the text block */
   margin: 2% auto; /* Center the text block with automatic margin */
   display: inline-block;
 }
 
 .experince-par2 {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
   padding: 10px;
   max-width: 80%;
   margin: 5%auto;
@@ -301,7 +309,7 @@
   }
 
   .photo-container {
-    width: 100%;
+    width: 90%;
   }
 
   .navigation-button {
@@ -322,9 +330,13 @@
     max-width: 100%;
   }
 
-  .new-section .your-photo,
   .new-section .experience-par {
     max-width: 100%; /* Allow the photo and text to take full width */
+  }
+
+  .new-section .your-photo {
+    max-width: 90%; /* Allow the photo and text to take full width */
+    margin-left: 10%;
   }
 
   .new-section .text-section {
@@ -343,6 +355,7 @@
 
   .new-section2 .your-photo2 {
     order: 1; /* Make the image appear before the text */
-    max-width: 100%; /* Allow the photo to take full width */
+    max-width: 90%;
+    margin-right: 10%; /* Allow the photo to take full width */
   }
 }

@@ -52,8 +52,9 @@ a:hover .back-icon {
 .gallery-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Same as Photos component */
-  gap: 15px;
-  padding: 20px;
+  gap: 2%;
+  padding: 5%;
+  margin: 2%;
 }
 
 .gallery-item {

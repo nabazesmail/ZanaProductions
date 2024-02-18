@@ -4,10 +4,10 @@ import "./photos.css"; // Ensure this CSS file exists and is correctly linked
 
 // Import images
 import photos1 from "../../images/kch.JPG";
-import photos2 from "../../images/shaw.JPG";
-import photos3 from "../../images/kch2.JPG";
+import photos2 from "../../images/kch2.JPG";
+import photos3 from "../../images/photo2.jpg";
 import photos4 from "../../images/photo1.png";
-import photos5 from "../../images/photo2.jpg";
+import photos5 from "../../images/shaw.JPG";
 import photos6 from "../../images/zhn3.JPG";
 import photos7 from "../../images/zhn4.JPG";
 import photos8 from "../../images/zhn5.JPG";
