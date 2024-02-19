@@ -52,9 +52,8 @@ a:hover .back-icon {
 .gallery-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Same as Photos component */
-  gap: 2%;
-  padding: 5%;
-  margin: 2%;
+  gap: 1%;
+  margin: 1%;
 }
 
 .gallery-item {
@@ -90,5 +89,10 @@ a:hover .back-icon {
   .back-icon {
     margin-top: 9%; /* Add bottom margin on mobile */
     margin-left: 6%;
+  }
+
+  .gallery-container {
+   position: relative;
+   right: 5.5%;
   }
 }

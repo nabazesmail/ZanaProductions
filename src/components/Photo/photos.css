@@ -84,8 +84,6 @@ a:hover .back-icon {
     minmax(400px, 1fr)
   ); /* Increase the minimum size of the columns */
   gap: 1%;
-  padding: 5%;
-  margin: 2%;
 }
 
 /* Media query for mobile devices */
@@ -93,5 +91,10 @@ a:hover .back-icon {
   .back-icon {
     margin-top: 9%; /* Add bottom margin on mobile */
     margin-left: 6%;
+  }
+
+  .gallery-container {
+    position: relative;
+    right: 5.5%;
   }
 }
