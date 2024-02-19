@@ -99,6 +99,10 @@
   margin: 2% auto; /* Center the footer */
 }
 
+.site-footer p{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+}
+
 .nextIcons {
   display: flex;
   justify-content: space-between;
@@ -235,9 +239,9 @@
 }
 
 .experince-par {
-  padding: 10px;
+  padding: 3%;
   max-width: 80%;
-  margin: 5%auto;
+  margin: 5% auto;
   line-height: 1.5;
   font-size: 20px;
   text-align: left;
@@ -270,9 +274,9 @@
 }
 
 .experince-par2 {
-  padding: 10px;
+  padding: 3%;
   max-width: 80%;
-  margin: 5%auto;
+  margin: 5% auto;
   line-height: 1.5;
   font-size: 20px;
   text-align: left;
@@ -331,7 +335,11 @@
   }
 
   .new-section .experience-par {
-    max-width: 100%; /* Allow the photo and text to take full width */
+    max-width: 90%; /* Allow the photo and text to take full width */
+  }
+
+  .new-section2 .experience-par2 {
+    max-width: 90%; /* Allow the photo and text to take full width */
   }
 
   .new-section .your-photo {
@@ -357,5 +365,10 @@
     order: 1; /* Make the image appear before the text */
     max-width: 90%;
     margin-right: 10%; /* Allow the photo to take full width */
+  }
+
+  .second-par {
+   text-align: center;
+   font-size: 5rem;
   }
 }
