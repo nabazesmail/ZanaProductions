@@ -13,7 +13,7 @@
   margin-bottom: 10px;
   color: black; /* Assuming you want the same color as Photos component */
   text-align: center;
-  font-family: cursive; /* Assuming you want to keep this font style */
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 
@@ -40,7 +40,7 @@ a:hover .back-icon {
 }
 
 .paragraph{
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande";
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: 500;
   padding: 20px;
   max-width: 80%;
@@ -89,10 +89,5 @@ a:hover .back-icon {
   .back-icon {
     margin-top: 9%; /* Add bottom margin on mobile */
     margin-left: 6%;
-  }
-
-  .gallery-container {
-   position: relative;
-   right: 5.5%;
   }
 }
