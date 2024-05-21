@@ -3,16 +3,16 @@ import { Link } from "react-router-dom";
 import "./Designs.css"; // Ensure this CSS file exists and is correctly linked
 
 // Import images
-import design1 from "../images/design.JPG";
-import design2 from "../images/design7.jpg";
-import design3 from "../images/design6.jpg";
-import design4 from "../images/design5.jpg";
-import design5 from "../images/design4.jpg";
-import design6 from "../images/design8.jpg";
-import design7 from "../images/design9.png";
-import design8 from "../images/design10.png";
+import design1 from "../../images/design.JPG";
+import design2 from "../../images/design7.jpg";
+import design3 from "../../images/design6.jpg";
+import design4 from "../../images/design5.jpg";
+import design5 from "../../images/design4.jpg";
+import design6 from "../../images/design8.jpg";
+import design7 from "../../images/design9.png";
+import design8 from "../../images/design10.png";
 
-import PhotoArrowSVG from './PhotoArrowSVG';
+import BackIcon from "../Icons/BackIcon.svg";
 
 
 const Designs = () => {
@@ -29,7 +29,8 @@ const Designs = () => {
     <div className="design-title" style={{ opacity: opacity, transition: 'opacity 1s ease' }}>
       <h1 className="title-h1">Designs</h1>
       <Link to="/"> {/* Wrap the SVG in a Link component */}
-        <PhotoArrowSVG />
+        {/* Wrap the SVG in a Link component */}
+        <img src={BackIcon} alt="Back" className="back-icon" />
       </Link>
       <p className="paragraph">Check out some of my designs!</p>
       <div className="gallery-container">

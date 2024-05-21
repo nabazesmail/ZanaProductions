@@ -37,7 +37,6 @@
   display: flex;
   margin: 0;
   flex-grow: 1; /* Adjusted for navigation links to take up flex space */
-  justify-content: flex-end; /* Aligns navigation links to the right */
 }
 
 .nav-links li {

@@ -1,0 +1,346 @@
+/* Hero Section */
+.hero-section {
+  background-image: url("../../images/camera8.jpg");
+  background-size: cover; /* Cover the entire section */
+  background-position: center; /* Center the image in the section */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  text-align: center;
+  padding: 50px 20px; /* Adjust padding as needed */
+  height: 80vh;
+}
+
+/* Photo container */
+.photo-container {
+  display: inline-block;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  position: relative;
+  top: 7%;
+  width: 30%;
+}
+
+.second-par {
+  color: #fff;
+  padding: 10px;
+  max-width: 800px;
+  margin: 10px auto;
+  line-height: 1.5;
+  font-size: 8rem;
+  font-family: "Caveat", cursive;
+  font-weight: 600;
+}
+
+.photo-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.img {
+  position: relative;
+  width: 40%;
+}
+
+/* Welcome text styling */
+.outside-hero-section {
+  margin: 4% auto; /* Space above the welcome text */
+  text-align: center;
+}
+
+.title {
+  font-size: 1.7em;
+  font-family: cursive;
+  max-width: 800px; /* Set a max-width for the text block */
+  margin: 2% auto; /* Center the text block with automatic margin */
+  margin-top: 5%;
+}
+
+.welcome-text {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding: 20px;
+  max-width: 80%; /* Set a max-width for the text block */
+  margin: 2% auto; /* Center the text block with automatic margin */
+  line-height: 1.5;
+  font-size: 20px;
+}
+
+.call-to-action {
+  color: black; /* Adjust text color as needed */
+  margin-top: 20px; /* Space from the previous paragraph */
+  font-weight: normal;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  max-width: 80%;
+  margin: 2% auto; /* Center the text block with automatic margin */
+  margin-top: 4%;
+  padding: auto 3%;
+  line-height: 1.6; /* Increase line height for better readability */
+  text-align: center; /* Ensure text is centered */
+  font-size: 17px;
+  font-weight: 550;
+}
+
+.section-divider {
+  width: 60%; /* Line width */
+  height: 2px; /* Line thickness */
+  background-color: #d3d3d3; /* Line color, choose what fits your design */
+  margin: 20px auto; /* Center the line horizontally and add some space around it */
+}
+
+.new-section {
+  text-align: center;
+  margin-top: 1%;
+  font-family: cursive;
+}
+
+.site-footer {
+  padding: 15px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+  width: 60%; /* Set width to 70% of the parent element */
+  margin: 2% auto; /* Center the footer */
+}
+
+.nextIcons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.nextIcons:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+  color: #fff;
+}
+
+.buttons-container {
+  text-align: center;
+  margin-top: 20px;
+}
+.navigation-button {
+  background-color: transparent;
+  border: 2px solid;
+  padding: 15px 30px;
+  margin: 2% 1%;
+  cursor: pointer;
+  border-radius: 2%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 1.5rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+
+  -webkit-border-radius: 2%;
+  -moz-border-radius: 2%;
+  -ms-border-radius: 2%;
+  -o-border-radius: 2%;
+}
+
+.navigation-button.orange-border {
+  border-color: #ff8c00;
+  background-color: #ff8c00;
+  color: #fff;
+}
+
+.navigation-button.orange-border:hover,
+.navigation-button.orange-border:focus {
+  border-color: #ffc073;
+  background-color: #ffc073;
+  color: #fff;
+}
+
+.navigation-button.blue-border {
+  border-color: #00879d;
+  background-color: #00879d;
+  color: #fff;
+}
+
+.navigation-button.blue-border:hover,
+.navigation-button.blue-border:focus {
+  border-color: #0edefe;
+  background-color: #0edefe;
+  color: #fff;
+}
+/* Icon styling */
+.navigation-button .nextIcons {
+  margin-left: 10px; /* Space between text and icon */
+  width: 20px; /* Icon size */
+  height: auto; /* Maintain aspect ratio */
+  color: #fff; /* Default color */
+  transition: transform 0.3s ease; /* Smooth transition for icon transform */
+}
+
+.navigation-button:hover .nextIcons {
+  color: #fff; /* Color change on hover */
+  transform: scale(1.1); /* Scale the icon on hover */
+}
+
+/* Hover state for the icon inside the button */
+.navigation-button:hover .nextIcons,
+.navigation-button:focus .nextIcons {
+  transform: translateX(5px); /* Move icon to the right */
+}
+
+.new-section .content-wrapper {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space between items */
+  gap: 20px;
+}
+
+.new-section .your-photo {
+  max-width: 50%; /* Adjust the width of the photo */
+  height: auto; /* Keep the aspect ratio of the photo */
+  padding: 2%;
+}
+
+.text-section {
+  flex: 1; /* Allow the paragraph to fill up the remaining space */
+  max-width: 50%; /* Optional: Limit the width of the text to make it more readable */
+  padding: 2%;
+}
+
+.title2 {
+  font-size: 1.7em;
+  font-family: cursive;
+  max-width: 800px; /* Set a max-width for the text block */
+  margin: 2% auto; /* Center the text block with automatic margin */
+  display: inline-block;
+}
+
+.experince-par {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding: 10px;
+  max-width: 80%;
+  margin: 5%auto;
+  line-height: 1.5;
+  font-size: 20px;
+  text-align: left;
+}
+
+/* New Section 2 Styles */
+.new-section2 {
+  text-align: center;
+  margin-top: 1%;
+  font-family: cursive;
+}
+
+.new-section2 .content-wrapper2 {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space between items */
+  gap: 20px;
+}
+
+.new-section2 .text-section2 {
+  flex: 1; /* Allow the paragraph to fill up the remaining space */
+  max-width: 50%; /* Optional: Limit the width of the text to make it more readable */
+  padding: 2%;
+}
+
+.new-section2 .title3 {
+  font-size: 1.7em;
+  font-family: cursive;
+  max-width: 800px; /* Set a max-width for the text block */
+  margin: 2% auto; /* Center the text block with automatic margin */
+  display: inline-block;
+}
+
+.experince-par2 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding: 10px;
+  max-width: 80%;
+  margin: 5%auto;
+  line-height: 1.5;
+  font-size: 20px;
+  text-align: left;
+}
+
+.new-section2 .your-photo2 {
+  max-width: 50%; /* Adjust the width of the photo */
+  height: auto; /* Keep the aspect ratio of the photo */
+  padding: 2%;
+}
+
+.your-photo {
+  max-width: 100%; /* Ensure the image is responsive */
+  height: auto;
+  margin: 20px 0; /* Space between the image and the text */
+  border-top-left-radius: 100px; /* Adjust the radius as needed */
+  border-bottom-left-radius: 100px; /* Adjust the radius as needed */
+}
+
+.your-photo2 {
+  max-width: 100%; /* Ensure the image is responsive */
+  height: auto;
+  margin: 20px 0; /* Space between the image and the text */
+  border-top-right-radius: 100px; /* Adjust the radius as needed */
+  border-bottom-right-radius: 100px; /* Adjust the radius as needed */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .second-par {
+    text-align: center;
+    font-size: 6rem;
+    line-height: 1.5;
+  }
+
+  .photo-container {
+    width: 100%;
+  }
+
+  .navigation-button {
+    padding: 10px 20px; /* Smaller padding for smaller buttons */
+    font-size: 1.3rem; /* Smaller font size for mobile */
+    margin: 10px 5px; /* Adjust margin for tighter spacing */
+  }
+
+  /* Adjust the next icon size if necessary */
+  .navigation-button .nextIcons {
+    margin-left: 5px; /* Adjusted space between text and icon */
+    width: 15px; /* Smaller icon size */
+    /* height is auto, so it will scale proportionally */
+  }
+
+  .new-section .content-wrapper {
+    flex-direction: column; /* Stack items vertically */
+    max-width: 100%;
+  }
+
+  .new-section .your-photo,
+  .new-section .experience-par {
+    max-width: 100%; /* Allow the photo and text to take full width */
+  }
+
+  .new-section .text-section {
+    max-width: 100%;
+  }
+
+  .new-section2 .content-wrapper2 {
+    flex-direction: column; /* Stack items vertically */
+    max-width: 100%;
+  }
+
+  .new-section2 .text-section2 {
+    order: 2; /* Make the text appear after the image */
+    max-width: 100%;
+  }
+
+  .new-section2 .your-photo2 {
+    order: 1; /* Make the image appear before the text */
+    max-width: 100%; /* Allow the photo to take full width */
+  }
+}
