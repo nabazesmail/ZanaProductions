@@ -5,26 +5,15 @@ import "./Designs.css"; // Ensure this CSS file exists and is correctly linked
 // Import images
 import design1 from "../../images/design.JPG";
 import design2 from "../../images/design7.jpg";
-<<<<<<< HEAD
 import design3 from "../../images/design6.jpg";
 import design4 from "../../images/design5.jpg";
 import design5 from "../../images/design4.jpg";
-=======
-import design3 from "../../images/design4.jpg";
-import design4 from "../../images/design5.jpg";
-import design5 from "../../images/design6.jpg";
->>>>>>> f54457b817f1a6c461d51e9fd68ae8a3766d3113
 import design6 from "../../images/design8.jpg";
 import design7 from "../../images/design9.png";
 import design8 from "../../images/design10.png";
 
 import BackIcon from "../Icons/BackIcon.svg";
 
-<<<<<<< HEAD
-
-const Designs = () => {
-  const images = [design1,design2,design3,design4,design5,design6,design7,design8]; // Array of images
-=======
 const Designs = () => {
   const images = [
     design1,
@@ -36,7 +25,7 @@ const Designs = () => {
     design7,
     design8,
   ]; // Array of images
->>>>>>> f54457b817f1a6c461d51e9fd68ae8a3766d3113
+
   const [opacity, setOpacity] = useState(0); // Initial opacity is 0 for fade-in effect
 
   useEffect(() => {
@@ -46,35 +35,23 @@ const Designs = () => {
   }, []);
 
   return (
-<<<<<<< HEAD
-    <div className="design-title" style={{ opacity: opacity, transition: 'opacity 1s ease' }}>
-      <h1 className="title-h1">Designs</h1>
-      <Link to="/"> {/* Wrap the SVG in a Link component */}
-        {/* Wrap the SVG in a Link component */}
-=======
     <div
       className="design-title"
       style={{ opacity: opacity, transition: "opacity 1s ease" }}
     >
       <h1 className="title-h1">Designs</h1>
       <Link to="/">
-        {" "}
->>>>>>> f54457b817f1a6c461d51e9fd68ae8a3766d3113
         <img src={BackIcon} alt="Back" className="back-icon" />
       </Link>
       <p className="paragraph">Check out some of my designs!</p>
       <div className="gallery-container">
         {images.map((image, index) => (
           <div className="gallery-item" key={index}>
-<<<<<<< HEAD
-            <img src={image} alt={`Design ${index + 1}`} className="gallery-image" />
-=======
             <img
               src={image}
               alt={`Design ${index + 1}`}
               className="gallery-image"
             />
->>>>>>> f54457b817f1a6c461d51e9fd68ae8a3766d3113
           </div>
         ))}
       </div>

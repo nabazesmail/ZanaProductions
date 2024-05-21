@@ -7,10 +7,7 @@
   text-align: center;
   padding: 50px 20px; /* Adjust padding as needed */
   height: 80vh;
-<<<<<<< HEAD
-=======
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
->>>>>>> f54457b817f1a6c461d51e9fd68ae8a3766d3113
 }
 
 /* Photo container */
@@ -33,13 +30,9 @@
   margin: 10px auto;
   line-height: 1.5;
   font-size: 8rem;
-<<<<<<< HEAD
   font-family: "Caveat", cursive;
   font-weight: 600;
-=======
-  font-weight: 600;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
->>>>>>> f54457b817f1a6c461d51e9fd68ae8a3766d3113
 }
 
 .photo-container img {
@@ -61,21 +54,15 @@
 
 .title {
   font-size: 1.7em;
-<<<<<<< HEAD
   font-family: cursive;
-=======
->>>>>>> f54457b817f1a6c461d51e9fd68ae8a3766d3113
   max-width: 800px; /* Set a max-width for the text block */
   margin: 2% auto; /* Center the text block with automatic margin */
   margin-top: 5%;
 }
 
 .welcome-text {
-<<<<<<< HEAD
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-=======
->>>>>>> f54457b817f1a6c461d51e9fd68ae8a3766d3113
   padding: 20px;
   max-width: 80%; /* Set a max-width for the text block */
   margin: 2% auto; /* Center the text block with automatic margin */
@@ -87,11 +74,8 @@
   color: black; /* Adjust text color as needed */
   margin-top: 20px; /* Space from the previous paragraph */
   font-weight: normal;
-<<<<<<< HEAD
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-=======
->>>>>>> f54457b817f1a6c461d51e9fd68ae8a3766d3113
   max-width: 80%;
   margin: 2% auto; /* Center the text block with automatic margin */
   margin-top: 4%;
@@ -112,7 +96,6 @@
 .new-section {
   text-align: center;
   margin-top: 1%;
-<<<<<<< HEAD
   font-family: cursive;
 }
 
@@ -123,8 +106,6 @@
   text-align: center;
   width: 60%; /* Set width to 70% of the parent element */
   margin: 2% auto; /* Center the footer */
-=======
->>>>>>> f54457b817f1a6c461d51e9fd68ae8a3766d3113
 }
 
 .nextIcons {
@@ -144,6 +125,7 @@
   text-align: center;
   margin-top: 20px;
 }
+
 .navigation-button {
   background-color: transparent;
   border: 2px solid;
@@ -151,11 +133,8 @@
   margin: 2% 1%;
   cursor: pointer;
   border-radius: 2%;
-<<<<<<< HEAD
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-=======
->>>>>>> f54457b817f1a6c461d51e9fd68ae8a3766d3113
   font-size: 1.5rem;
   transition: background-color 0.3s ease, color 0.3s ease;
   display: inline-flex;
@@ -163,16 +142,10 @@
   justify-content: center;
   position: relative;
   transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
-<<<<<<< HEAD
-
-=======
->>>>>>> f54457b817f1a6c461d51e9fd68ae8a3766d3113
   -webkit-border-radius: 2%;
   -moz-border-radius: 2%;
   -ms-border-radius: 2%;
   -o-border-radius: 2%;
-<<<<<<< HEAD
-=======
   -webkit-transition: background-color 0.3s ease, color 0.3s ease,
     box-shadow 0.3s ease;
   -moz-transition: background-color 0.3s ease, color 0.3s ease,
@@ -181,21 +154,17 @@
     box-shadow 0.3s ease;
   -o-transition: background-color 0.3s ease, color 0.3s ease,
     box-shadow 0.3s ease;
->>>>>>> f54457b817f1a6c461d51e9fd68ae8a3766d3113
 }
 
 .navigation-button.orange-border {
   border-color: #ff8c00;
   background-color: #ff8c00;
   color: #fff;
-<<<<<<< HEAD
-=======
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
->>>>>>> f54457b817f1a6c461d51e9fd68ae8a3766d3113
 }
 
 .navigation-button.orange-border:hover,
@@ -209,14 +178,11 @@
   border-color: #00879d;
   background-color: #00879d;
   color: #fff;
-<<<<<<< HEAD
-=======
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
->>>>>>> f54457b817f1a6c461d51e9fd68ae8a3766d3113
 }
 
 .navigation-button.blue-border:hover,
@@ -225,30 +191,18 @@
   background-color: #0edefe;
   color: #fff;
 }
+
 /* Icon styling */
 .navigation-button .nextIcons {
-<<<<<<< HEAD
   margin-left: 10px; /* Space between text and icon */
   width: 20px; /* Icon size */
   height: auto; /* Maintain aspect ratio */
   color: #fff; /* Default color */
   transition: transform 0.3s ease; /* Smooth transition for icon transform */
-=======
-  margin-left: 10px;
-  /*Spacebetweentextandicon*/
-  width: 20px;
-  /*Iconsize*/
-  height: auto;
-  /*Maintainaspectratio*/
-  color: #fff;
-  /*Defaultcolor*/
-  transition: transform 0.3s ease;
-  /* Smooth transition for icon transform */
   -webkit-transition: transform 0.3s ease;
   -moz-transition: transform 0.3s ease;
   -ms-transition: transform 0.3s ease;
   -o-transition: transform 0.3s ease;
->>>>>>> f54457b817f1a6c461d51e9fd68ae8a3766d3113
 }
 
 .navigation-button:hover .nextIcons {
@@ -283,27 +237,18 @@
 
 .title2 {
   font-size: 1.7em;
-<<<<<<< HEAD
   font-family: cursive;
-=======
->>>>>>> f54457b817f1a6c461d51e9fd68ae8a3766d3113
   max-width: 800px; /* Set a max-width for the text block */
   margin: 2% auto; /* Center the text block with automatic margin */
   display: inline-block;
 }
 
 .experince-par {
-<<<<<<< HEAD
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  padding: 10px;
-  max-width: 80%;
-  margin: 5%auto;
-=======
   padding: 3%;
   max-width: 80%;
   margin: 5% auto;
->>>>>>> f54457b817f1a6c461d51e9fd68ae8a3766d3113
   line-height: 1.5;
   font-size: 20px;
   text-align: left;
@@ -313,10 +258,7 @@
 .new-section2 {
   text-align: center;
   margin-top: 1%;
-<<<<<<< HEAD
   font-family: cursive;
-=======
->>>>>>> f54457b817f1a6c461d51e9fd68ae8a3766d3113
 }
 
 .new-section2 .content-wrapper2 {
@@ -334,27 +276,18 @@
 
 .new-section2 .title3 {
   font-size: 1.7em;
-<<<<<<< HEAD
   font-family: cursive;
-=======
->>>>>>> f54457b817f1a6c461d51e9fd68ae8a3766d3113
   max-width: 800px; /* Set a max-width for the text block */
   margin: 2% auto; /* Center the text block with automatic margin */
   display: inline-block;
 }
 
 .experince-par2 {
-<<<<<<< HEAD
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  padding: 10px;
-  max-width: 80%;
-  margin: 5%auto;
-=======
   padding: 3%;
   max-width: 80%;
   margin: 5% auto;
->>>>>>> f54457b817f1a6c461d51e9fd68ae8a3766d3113
   line-height: 1.5;
   font-size: 20px;
   text-align: left;
@@ -382,35 +315,17 @@
   border-bottom-right-radius: 100px; /* Adjust the radius as needed */
 }
 
-<<<<<<< HEAD
-=======
-
-.site-footer {
-  padding: 15px;
-  text-align: center;
-  width: 60%; /* Set width to 70% of the parent element */
-  margin: 2% auto; /* Center the footer */
-}
-
->>>>>>> f54457b817f1a6c461d51e9fd68ae8a3766d3113
 /* Media query for mobile devices */
 @media (max-width: 768px) {
   .second-par {
     text-align: center;
-    font-size: 6rem;
+    font-size: 5rem;
     line-height: 1.5;
-<<<<<<< HEAD
-  }
-
-  .photo-container {
-    width: 100%;
-=======
     margin-right: 2%;
   }
 
   .photo-container {
     width: 90%;
->>>>>>> f54457b817f1a6c461d51e9fd68ae8a3766d3113
   }
 
   .navigation-button {
@@ -431,26 +346,12 @@
     max-width: 100%;
   }
 
-<<<<<<< HEAD
   .new-section .your-photo,
-=======
->>>>>>> f54457b817f1a6c461d51e9fd68ae8a3766d3113
   .new-section .experience-par {
-    max-width: 100%; /* Allow the photo and text to take full width */
-  }
-
-<<<<<<< HEAD
-=======
-  .new-section2 .experience-par2 {
-    max-width: 100%; /* Allow the photo and text to take full width */
-  }
-
-  .new-section .your-photo {
     max-width: 90%; /* Allow the photo and text to take full width */
     margin-left: 10%;
   }
 
->>>>>>> f54457b817f1a6c461d51e9fd68ae8a3766d3113
   .new-section .text-section {
     max-width: 100%;
   }
@@ -467,16 +368,7 @@
 
   .new-section2 .your-photo2 {
     order: 1; /* Make the image appear before the text */
-<<<<<<< HEAD
-    max-width: 100%; /* Allow the photo to take full width */
-=======
     max-width: 90%;
     margin-right: 10%; /* Allow the photo to take full width */
-  }
-
-  .second-par {
-   text-align: center;
-   font-size: 5rem;
->>>>>>> f54457b817f1a6c461d51e9fd68ae8a3766d3113
   }
 }

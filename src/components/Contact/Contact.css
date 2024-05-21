@@ -3,10 +3,8 @@
   align-items: center;
   justify-content: center;
   margin-top: 2%;
-<<<<<<< HEAD
-=======
+
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
->>>>>>> f54457b817f1a6c461d51e9fd68ae8a3766d3113
 }
 
 .text-column {
@@ -56,11 +54,11 @@
   text-align: center;
   margin-top: 50px;
   font-size: 2.5rem;
-<<<<<<< HEAD
+
   color: black;
-=======
+
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
->>>>>>> f54457b817f1a6c461d51e9fd68ae8a3766d3113
+
 }
 
 .par-me {
@@ -68,11 +66,10 @@
   margin-top: 3%;
   font-size: 1.3rem;
   color: black;
-<<<<<<< HEAD
+
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-=======
->>>>>>> f54457b817f1a6c461d51e9fd68ae8a3766d3113
+
   padding: 0 10% 0 10%;
   text-align: center;
 }
@@ -82,11 +79,10 @@
   flex-direction: column;
   align-items: center;
   font-size: 1.1rem;
-<<<<<<< HEAD
+
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-=======
->>>>>>> f54457b817f1a6c461d51e9fd68ae8a3766d3113
+
 }
 
 /* General styling for social media icons */
