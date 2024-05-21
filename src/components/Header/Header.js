@@ -22,8 +22,7 @@ const Header = () => {
       <button
         className="nav-toggle"
         onClick={toggleNav}
-        aria-label="Toggle navigation"
-      >
+        aria-label="Toggle navigation">
         <span className="bar"></span>
         <span className="bar"></span>
         <span className="bar"></span>

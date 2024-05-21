@@ -4,13 +4,13 @@
   margin-bottom: 10px;
   color: black;
   text-align: center;
-  font-family: cursive;
   display: inline-block;
   padding-right: 8%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .paragraph {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande";
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: 500;
   padding: 20px;
   max-width: 80%;
@@ -49,16 +49,6 @@ a:hover .back-icon {
   text-align: center;
 }
 
-.gallery-container {
-  display: grid;
-  grid-template-columns: repeat(
-    auto-fill,
-    minmax(400px, 1fr)
-  ); /* Increase the minimum size of the columns */
-  gap: 15px;
-  padding: 20px;
-}
-
 .gallery-item {
   overflow: hidden;
   border-radius: 8px;
@@ -84,6 +74,16 @@ a:hover .back-icon {
 
 .gallery-item:hover .gallery-image {
   transform: scale(1.05); /* More moderate zoom effect */
+}
+
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(400px, 1fr)
+  ); /* Increase the minimum size of the columns */
+  gap: 1%;
 }
 
 /* Media query for mobile devices */

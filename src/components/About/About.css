@@ -23,12 +23,19 @@
 .title-h2 {
   font-size: 2.5rem; /* Adjust font size as needed */
   margin-bottom: 20px; /* Add space between the title and the text */
+<<<<<<< HEAD
   font-family: cursive;
 }
 
 .par {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+=======
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.par {
+>>>>>>> f54457b817f1a6c461d51e9fd68ae8a3766d3113
   line-height: 1.5;
 }
 
@@ -88,4 +95,15 @@
     position: static; /* To ensure the button flows with the document */
     margin-bottom: 20px; /* Add space below the button on small screens */
   }
+<<<<<<< HEAD
+=======
+
+  .about-photo {
+    border-radius: 2%;
+    -webkit-border-radius: 2%;
+    -moz-border-radius: 2%;
+    -ms-border-radius: 2%;
+    -o-border-radius: 2%;
+  }
+>>>>>>> f54457b817f1a6c461d51e9fd68ae8a3766d3113
 }

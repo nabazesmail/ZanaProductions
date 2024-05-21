@@ -27,9 +27,15 @@ const Contact = () => {
           If you have any questions or feedback, feel free to reach out to me!
         </p>
         <div className="contact-info">
+<<<<<<< HEAD
           <p>Email: zanaproductions@gmail.com</p>
           <p>Phone: (+964 ) 123-45-67</p>
           <p>Address: Iraq, Sulaymaniyah, Bakrajo</p>
+=======
+          <p>Email: mamzana22@gmail.com</p>
+          <p>Phone: 0770 910-23-51</p>
+          <p>Address: Iraq, Sulaymaniyah, Newaroz city, Awbara St,406</p>
+>>>>>>> f54457b817f1a6c461d51e9fd68ae8a3766d3113
         </div>
         <div className="social-media-icons">
           <a
